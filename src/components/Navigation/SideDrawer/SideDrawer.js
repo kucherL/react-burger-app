@@ -15,7 +15,7 @@ const sideDrawer = props => {
   return (
     <Aux>
       <Backdrop show={props.open} clicked={props.closed} />
-      <div className={attachedClasses.join(" ")}>
+      <div className={attachedClasses.join(" ")} onClick={props.closed}>
         {/* альтернативный способ динамического назначения стилей: */}
         {/* с помощью css модулей можно использовать одинаковые названия классов в разных файлах - они не смешаются */}
         <div className={classes.Logo}>
